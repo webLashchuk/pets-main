@@ -9,7 +9,7 @@ $(function () {
         }
     });
 
-    $('.burger-btn, .mobile-menu__logo, .select-lang__item, .social__link--mobile, .main-menu__item--mobile').on('click', function () {
+    $('.burger-btn, .mobile-menu__logo, .select-lang__link--mobiile, .social__link--mobile, .main-menu__item--mobile').on('click', function () {
         $('.logo').toggleClass('logo-menu');
         $('.mobile-menu__inner').toggleClass('mobile-menu__inner--active');
         $('.overlay').toggleClass('overlay--active');
