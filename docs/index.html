@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets - pet shop | Main page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <nav class="header-menu">
+
+            <button class="burger-btn burger-btn--open" type="button">
+                <span class="burger-btn__line"></span>
+                <span class="sr-only">Открыть меню</span>
+            </button>
+
+            <a class="logo header-menu__logo" href="#">
+                <img class="logo__img" src="images/logo.svg" width="115" height="45" alt="Pets shop logo">
+            </a>
+
+            <ul class="main-menu main-menu--header">
+                <li class="main-menu__item">
+                    <a class="link main-menu__link" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="link main-menu__link" href="#">
+                        Category
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="link main-menu__link" href="#">
+                        About
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="link main-menu__link" href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <form class="header-menu__search-form" action="#">
+                <button class="header-menu__search-submit"></button>
+                <label for="search"></label>
+                <input class="header-menu__search-field" type="text" name="search" id="search"
+                    placeholder="Search something here!">
+            </form>
+
+            <ul class="header-actions">
+                <li class="header-actions__item">
+                    <button class="header-actions__button header-actions__button--selected" type="button">
+                        <span class="sr-only">Selected goods</span>
+                        <span class="header-actions__counter">
+                            16
+                        </span>
+                    </button>
+                </li>
+                <li class="header-actions__item">
+                    <button class="header-actions__button header-actions__button--cart" type="button">
+                        <span class="sr-only">Open cart</span>
+                        <span class="header-actions__counter">
+                            <span class="sr-only">Goods in cart</span>
+                            0
+                        </span>
+                    </button>
+                </li>
+                <li class="header-actions__item">
+                    <div class="select-lang">
+                        <span class="sr-only">Select your language</span>
+                        <div class="select-lang__select" style="background-image:url('images/header/gb.svg')">en</div>
+                        <div class="select-lang__list">
+                            <div class="select-lang__item">
+                                <span class="sr-only">Russian</span>
+                                <a class="select-lang__link select-lang__link--ru"
+                                    style="background-image:url('images/header/ru.svg')" href="#">ru</a>
+                            </div>
+                            <div class="select-lang__item">
+                                <span class="sr-only">Ukrainian</span>
+                                <a class="select-lang__link select-lang__link--ua"
+                                    style="background-image:url('images/header/ua.svg')" href="#">ua</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="overlay"></div>
+            <ul class="mobile-menu__inner">
+                <li class="mobile-menu__item">
+                    <a class="logo mobile-menu__logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" width="115" height="40" alt="Monito logo">
+                    </a>
+                    <button class="burger-btn burger-btn--close" type="button">
+                        <span class="sr-only">Закрыть меню</span>
+                    </button>
+                </li>
+                <li class="mobile-menu__item">
+                    <ul class="main-menu main-menu--mobile">
+                        <li class="main-menu__item main-menu__item--mobile">
+                            <a class=" main-menu__link main-menu__link--mobile" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="main-menu__item main-menu__item--mobile">
+                            <a class="main-menu__link main-menu__link--mobile" href="#">
+                                Category
+                            </a>
+                        </li>
+                        <li class="main-menu__item main-menu__item--mobile">
+                            <a class="main-menu__link main-menu__link--mobile" href="#">
+                                About
+                            </a>
+                        </li>
+                        <li class="main-menu__item main-menu__item--mobile">
+                            <a class="main-menu__link main-menu__link--mobile" href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <ul class="mobile-menu__lang-list">
+                        <li class="select-lang__item">
+                            <span class="sr-only">English</span>
+                            <a class="select-lang__link select-lang__link--en"
+                                style="background-image:url('images/header/gb.svg')">en</a>
+                        </li>
+                        <li class="select-lang__item">
+                            <span class="sr-only">Russian</span>
+                            <a class="select-lang__link select-lang__link--ru"
+                                style="background-image:url('images/header/ru.svg')" href="#">ru</a>
+                        </li>
+                        <li class="select-lang__item">
+                            <span class="sr-only">Ukrainian</span>
+                            <a class="select-lang__link select-lang__link--ua"
+                                style="background-image:url('images/header/ua.svg')" href="#">ua</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link social__link--mobile" style="-webkit-mask-image:url(images/sprite.svg#facebook)" href="#">
+                                <span class="sr-only">Go in facebook</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--mobile" style="-webkit-mask-image:url(images/sprite.svg#twitter)" href="#">
+                                <span class="sr-only">Go in twitter</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--mobile" style="-webkit-mask-image:url(images/sprite.svg#instagram)"
+                                href="#">
+                                <span class="sr-only">Go in instagram</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--mobile" style="-webkit-mask-image:url(images/sprite.svg#youtube)" href="#">
+                                <span class="sr-only">Go in outube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <h1 class="sr-only">Pet shop Monito - store of goods for animals</h1>
+
+    <section class="hero">
+    <div class="container hero__container">
+        <div class="hero__wrapper" style="background-image:url('images/hero/hero-img.png')">
+            <h2 class="sr-only">A pet for everyone</h2>
+            <div class="hero__inner">
+                <span class="caption-big hero__caption-big">
+                    One more friend
+                </span>
+                <span class="caption-small hero__caption-small">
+                    Thousands more fun!
+                </span>
+                <p class="hero__text">
+                    Having a pet means you have more joy, a new friend, a happy person who will always be with
+                    you to have fun. We have 200+ different pets that can meet your needs!
+                </p>
+                <a data-fancybox class="view-link view-link--intro" href="https://youtu.be/9taj4TuR3VA">View Intro</a>
+                <a class="gen-btn hero__gen-btn" href="#">Explore Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="goods">
+    <div class="container goods__container">
+        <span class="sub-title">Whats new?</span>
+        <div class="header-container">
+            <h2 class="title">Take a look at some of our pets</h2>
+            <a class="view-link view-link--more" href="#">View more</a>
+        </div>
+        <ul class="goods__list">
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/pets/pomeranian-white.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">MO231 - Pomeranian White</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Gene:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Male</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Age:</span>
+                            <span class="goods-card__value">02 months</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">6.900.000 VND</span>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/pets/poodle-yellow.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">MO502 - Poodle Tiny Yellow</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Gene:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Female</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Age:</span>
+                            <span class="goods-card__value">02 months</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">3.900.000 VND</span>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/pets/poodle-sepia.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">MO102 - Poodle Tiny Sepia</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Gene:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Male</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Age:</span>
+                            <span class="goods-card__value">02 months</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">4.000.000 VND</span>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/pets/alaskan-grey.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">MO512 - Alaskan Malamute Grey</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Gene:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Male</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Age:</span>
+                            <span class="goods-card__value">02 months</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">8.900.000 VND</span>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/pets/pembroke-cream.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">MO231 - Pembroke Corgi Cream</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Gene:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Male</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Age:</span>
+                            <span class="goods-card__value">02 months</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">7.900.000 VND</span>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/pets/pembroke-tricolor.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">MO502 - Pembroke Corgi Tricolor</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Gene:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Female</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Age:</span>
+                            <span class="goods-card__value">02 months</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">9.000.000 VND</span>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/pets/pomeranian-tricolor.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">MO231 - Pomeranian White</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Gene:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Female</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Age:</span>
+                            <span class="goods-card__value">02 months</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">6.500.000 VND</span>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/pets/poodle-cow.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">MO512 - Poodle Tiny Dairy Cow</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Gene:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Male</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Age:</span>
+                            <span class="goods-card__value">02 months</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">5.000.000 VND</span>
+                </article>
+            </li>
+            <li class="goods__item">
+        </ul>
+    </div>
+</section>
+
+    <article class="banner banner--right">
+    <div class="banner__wrapper banner__wrapper--right" style="background-image:url('../images/banners/main/girl.png')">
+        <div class="banner__inner">
+            <span class="caption-big  banner__caption-big">
+                One more friend
+            </span>
+            <span class="caption-small banner__caption-small">
+                Thousands more fun!
+            </span>
+            <p class="banner__text">
+                Having a pet means you have more joy, a new friend, a happy person who will always be with
+                you to have fun. We have 200+ different pets that can meet your needs!
+            </p>
+            <a data-fancybox class="view-link view-link--intro" href="https://youtu.be/9taj4TuR3VA">View Intro</a>
+            <a class="gen-btn banner__gen-btn" href="#">Explore Now</a>
+        </div>
+    </div>
+</article>
+
+    <section class="goods">
+    <div class="container goods__container goods__container--accessories">
+        <span class="sub-title">Hard to choose right products for your pets?</span>
+        <div class="header-container">
+            <h2 class="title">Our Products</h2>
+            <a class="view-link view-link--more" href="#">View more</a>
+        </div>
+        <ul class="goods__list">
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/accessories/cat-food-pate.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">Reflex Plus Adult Cat Food Salmon</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Product:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Dog Food</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Size:</span>
+                            <span class="goods-card__value">385gm</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">140.000 VND</span>
+                    <div class="goods-card__gift">Free Toy & Free Shaker</div>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/accessories/cat-food-dry.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">Reflex Plus Adult Cat Food Salmon</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Product:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Cat Food</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Size:</span>
+                            <span class="goods-card__value">1.5kg</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">165.000 VND</span>
+                    <div class="goods-card__gift">Free Toy & Free Shaker</div>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/accessories/rope-ball.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">Cat scratching ball toy kitten sisal rope ball</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Product:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Toy</a>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">1.100.000 VND</span>
+                    <div class="goods-card__gift">Free Cat Food</div>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/accessories/cat-nest.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">Cute Pet Cat Warm Nest</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Product:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Toy</a>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">410.000 VND</span>
+                    <div class="goods-card__gift">Free Cat Food</div>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/accessories/dog-food-wet.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">NaturVet Dogs - Omega-Gold Plus Salmon Oil</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Product:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Dog Food</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Size:</span>
+                            <span class="goods-card__value">385gm</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">350.000 VND</span>
+                    <div class="goods-card__gift">Free Toy & Free Shaker</div>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/accessories/cowboy-costume.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">Costumes Fashion Pet Clother Cowboy Rider</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Product:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Costume</a>
+                        </li>
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Size:</span>
+                            <span class="goods-card__value">1.5kg</span>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">500.000 VND</span>
+                    <div class="goods-card__gift">Free Toy & Free Shaker</div>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/accessories/costume-chicken.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">Costumes Chicken Drumsti ck Headband</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Product:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Costume</a>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price">400.000 VND</span>
+                    <div class="goods-card__gift">Free Cat Food</div>
+                </article>
+            </li>
+            <li class="goods__item">
+                <article class="goods-card">
+                    <a class="goods-card__link" href="#">
+                        <img class="goods-card__img" src="images/goods-card/accessories/pet-toy.jpg" width="264"
+                            height="264" alt="Pomeranian dog">
+                        <h3 class="goods-card__title">Plush Pet Toy</h3>
+                    </a>
+                    <ul class="goods-card__info">
+                        <li class="goods-card__item">
+                            <span class="goods-card__info-title">Product:</span>
+                            <a class="goods-card__value goods-card__value--link" href="#">Toy</a>
+                        </li>
+                    </ul>
+                    <span class="goods-card__price goods-card__price">250.000 VND</span>
+                    <div class="goods-card__gift">Free Cat Food</div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <section class="partners">
+    <div class="container">
+        <div class="header-container partners__header-container">
+            <span class="sub-title partners__sub-title">Proud to be part of</span>
+            <h2 class="title partners__title">Pet Sellers</h2>
+            <a class="view-link view-link--more" href="#">View more</a>
+        </div>
+        <ul class="partners__list">
+            <li class="partners__item">
+                <img src="images/partners/sheba.png" width="88" height="64" alt="Sheba">
+            </li>
+            <li class="partners__item">
+                <img src="images/partners/whiskas.png" width="114" height="114" alt="Whiskas">
+            </li>
+            <li class="partners__item">
+                <img src="images/partners/bakers.png" width="104" height="46" alt="Bakers">
+            </li>
+            <li class="partners__item">
+                <img src="images/partners/felix.png" width="92" height="64" alt="Felix">
+            </li>
+            <li class="partners__item">
+                <img src="images/partners/good-boy.png" width="92" height="92" alt="Good-boy">
+            </li>
+            <li class="partners__item">
+                <img src="images/partners/butchers.png" width="130" height="56" alt="Butchers">
+            </li>
+            <li class="partners__item">
+                <img src="images/partners/pedigree.png" width="116" height="72" alt="Pedigree">
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <article class="banner banner--left">
+    <div class="banner__wrapper banner__wrapper--left" style="background-image:url('../images/banners/main/hand-paw.png')">
+        <div class="banner__inner banner__inner--left">
+            <span class="caption-big banner__caption-big banner__caption-big--icon">
+                Adoption
+            </span>
+            <span class="caption-small banner__caption-small">
+                We need help. so do they.
+            </span>
+            <p class="banner__text">
+                Adopt a pet and give it a home,
+                it will be love you back unconditionally.
+            </p>
+            <a data-fancybox class="view-link view-link--intro" href="https://youtu.be/9taj4TuR3VA">View Intro</a>
+            <a class="gen-btn banner__gen-btn" href="#">Explore Now</a>
+        </div>
+    </div>
+</article>
+
+    <section class="blog">
+    <div class="container blog__container">
+        <span class="sub-title">You already know ?</span>
+        <div class="header-container">
+            <h2 class="title">Useful pet knowledge</h2>
+            <a class="view-link view-link--more" href="#">View more</a>
+        </div>
+        <ul class="blog__list">
+            <li class="blog__item">
+                <article class="blog-article">
+                    <a class="blog-article__link" href="#">
+                        <img class="blog-article__img" src="../images/blog/pomeranian-dog.jpg" width="364" height="243" alt="Pomeranian dog">
+                        <span class="blog-article__category">Pet knowledge</span>
+                        <h3 class="blog-article__title">
+                            What is a Pomeranian? How to Identify Pomeranian Dogs
+                        </h3>
+                        <p class="blog-article__text">
+                            The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the cutest pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.
+                        </p>
+                    </a>
+                </article>
+            </li>
+            <li class="blog__item">
+                <article class="blog-article">
+                    <a class="blog-article__link" href="#">
+                        <img class="blog-article__img" src="../images/blog/diet.jpg" width="364" height="243" alt="Pomeranian dog">
+                        <span class="blog-article__category">Pet knowledge</span>
+                        <h3 class="blog-article__title">
+                            Dog Diet You Need To Know
+                        </h3>
+                        <p class="blog-article__text">
+                            Dividing a dog's diet may seem simple at first, but there are some rules you should know so that your dog can easily absorb the nutrients in the diet. For those who are just starting to raise dogs, especially newborn puppies with relatively weak resistance.
+                        </p>
+                    </a>
+                </article>
+            </li>
+            <li class="blog__item">
+                <article class="blog-article">
+                    <a class="blog-article__link" href="#">
+                        <img class="blog-article__img" src="../images/blog/furniture.jpg" width="364" height="243" alt="Pomeranian dog">
+                        <span class="blog-article__category">Pet knowledge</span>
+                        <h3 class="blog-article__title">
+                            Why Dogs Bite and Destroy Furniture and How to Prevent It Effectively
+                        </h3>
+                        <p class="blog-article__text">
+                            Dog bites are common during development. However, no one wants to see their furniture or important items being bitten by a dog.
+                        </p>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="subscription">
+                <h2 class="title subscription__title">
+                    Register now so you don't miss our programs
+                </h2>
+                <form class="subscription__form" action="#">
+                    <label class="sr-only" for="email"></label>
+                    <input class="subscription__field" type="email" name="email" id="email"
+                        placeholder="Enter your Email" required>
+                    <button class="gen-btn subscription__gen-btn">Subcribe Now</button>
+                </form>
+            </div>
+            <div class="footer__inner">
+                <ul class="main-menu">
+                    <li class="main-menu__item main-menu__item--footer">
+                        <a class="link main-menu__link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--footer">
+                        <a class="link main-menu__link" href="#">
+                            Category
+                        </a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--footer">
+                        <a class="link main-menu__link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--footer">
+                        <a class="link main-menu__link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link" style="-webkit-mask-image:url(images/sprite.svg#facebook)"
+                            href="#">
+                            <span class="sr-only">Go in facebook</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" style="-webkit-mask-image:url(images/sprite.svg#twitter)"
+                            href="#">
+                            <span class="sr-only">Go in twitter</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" style="-webkit-mask-image:url(images/sprite.svg#instagram)"
+                            href="#">
+                            <span class="sr-only">Go in instagram</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" style="-webkit-mask-image:url(images/sprite.svg#youtube)"
+                            href="#">
+                            <span class="sr-only">Go in outube</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                &copy; 2022 Pets. All rights reserved.
+            </div>
+            <a class="logo footer__logo" href="#">
+                <img class="logo__img" src="images/logo.svg" width="115" height="45" alt="Pets shop logo">
+            </a>
+            <div class="footer__info">
+                <a class="link footer__info-link" href="#">Terms of Service</a>
+                <a class="link footer__info-link" href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monito - pet shop | Category</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <nav class="header-menu">
+
+            <button class="burger-btn burger-btn--open" type="button">
+                <span class="burger-btn__line"></span>
+                <span class="sr-only">Открыть меню</span>
+            </button>
+
+            <a class="logo header-menu__logo" href="#">
+                <img class="logo__img" src="images/logo.svg" width="115" height="40" alt="Monito logo">
+            </a>
+
+            <ul class="main-menu main-menu--header">
+                <li class="main-menu__item">
+                    <a class="link main-menu__link" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="link main-menu__link" href="#">
+                        Category
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="link main-menu__link" href="#">
+                        About
+                    </a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="link main-menu__link" href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <form class="header-menu__search-form" action="#">
+                <button class="header-menu__search-submit"></button>
+                <label for="search"></label>
+                <input class="header-menu__search-field" type="text" name="search" id="search"
+                    placeholder="Search something here!">
+            </form>
+
+            <ul class="header-actions">
+                <li class="header-actions__item">
+                    <button class="header-actions__button header-actions__button--selected" type="button">
+                        <span class="sr-only">Selected goods</span>
+                        <span class="header-actions__counter">
+                            16
+                        </span>
+                    </button>
+                </li>
+                <li class="header-actions__item">
+                    <button class="header-actions__button header-actions__button--cart" type="button">
+                        <span class="sr-only">Open cart</span>
+                        <span class="header-actions__counter">
+                            <span class="sr-only">Goods in cart</span>
+                            0
+                        </span>
+                    </button>
+                </li>
+                <li class="header-actions__item">
+                    <div class="select-lang">
+                        <span class="sr-only">Select your language</span>
+                        <div class="select-lang__select" style="background-image:url('images/header/gb.svg')">en</div>
+                        <div class="select-lang__list">
+                            <div class="select-lang__item">
+                                <span class="sr-only">Russian</span>
+                                <a class="select-lang__link select-lang__link--ru"
+                                    style="background-image:url('images/header/ru.svg')" href="#">ru</a>
+                            </div>
+                            <div class="select-lang__item">
+                                <span class="sr-only">Ukrainian</span>
+                                <a class="select-lang__link select-lang__link--ua"
+                                    style="background-image:url('images/header/ua.svg')" href="#">ua</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="overlay"></div>
+            <ul class="mobile-menu__inner">
+                <li class="mobile-menu__item">
+                    <a class="logo mobile-menu__logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" width="115" height="40" alt="Monito logo">
+                    </a>
+                    <button class="burger-btn burger-btn--close" type="button">
+                        <span class="sr-only">Закрыть меню</span>
+                    </button>
+                </li>
+                <li class="mobile-menu__item">
+                    <ul class="main-menu main-menu--mobile">
+                        <li class="main-menu__item main-menu__item--mobile">
+                            <a class=" main-menu__link main-menu__link--mobile" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="main-menu__item main-menu__item--mobile">
+                            <a class="main-menu__link main-menu__link--mobile" href="#">
+                                Category
+                            </a>
+                        </li>
+                        <li class="main-menu__item main-menu__item--mobile">
+                            <a class="main-menu__link main-menu__link--mobile" href="#">
+                                About
+                            </a>
+                        </li>
+                        <li class="main-menu__item main-menu__item--mobile">
+                            <a class="main-menu__link main-menu__link--mobile" href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <ul class="mobile-menu__lang-list">
+                        <li class="select-lang__item">
+                            <span class="sr-only">English</span>
+                            <a class="select-lang__link select-lang__link--en"
+                                style="background-image:url('images/header/gb.svg')">en</a>
+                        </li>
+                        <li class="select-lang__item">
+                            <span class="sr-only">Russian</span>
+                            <a class="select-lang__link select-lang__link--ru"
+                                style="background-image:url('images/header/ru.svg')" href="#">ru</a>
+                        </li>
+                        <li class="select-lang__item">
+                            <span class="sr-only">Ukrainian</span>
+                            <a class="select-lang__link select-lang__link--ua"
+                                style="background-image:url('images/header/ua.svg')" href="#">ua</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link social__link--mobile" style="-webkit-mask-image:url(images/sprite.svg#facebook)" href="#">
+                                <span class="sr-only">Go in facebook</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--mobile" style="-webkit-mask-image:url(images/sprite.svg#twitter)" href="#">
+                                <span class="sr-only">Go in twitter</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--mobile" style="-webkit-mask-image:url(images/sprite.svg#instagram)"
+                                href="#">
+                                <span class="sr-only">Go in instagram</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--mobile" style="-webkit-mask-image:url(images/sprite.svg#youtube)" href="#">
+                                <span class="sr-only">Go in outube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="main main--padding">
+
+    <h1 class="sr-only">Pet shop Monito - our dogs</h1>
+
+    <div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a class="link breadcrumbs__link" href="#">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="link breadcrumbs__link" href="#">Dog</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link" href="#">Small dog</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <article class="banner">
+    <div class="banner__wrapper banner__wrapper--category" style="background-image:url('../images/banners/category/pets.png')">
+        <div class="banner__inner">
+            <h2 class="sr-only">Get a friend with us</h2>
+            <span class="caption-big  banner__caption-big">
+                One more friend
+            </span>
+            <span class="caption-small banner__caption-small">
+                Thousands more fun!
+            </span>
+            <p class="banner__text">
+                Having a pet means you have more joy, a new friend, a happy person who will always be with
+                you to have fun. We have 200+ different pets that can meet your needs!
+            </p>
+            <a data-fancybox class="view-link view-link--white view-link--intro" href="https://youtu.be/9taj4TuR3VA">View Intro</a>
+            <a class="gen-btn gen-btn--white banner__gen-btn" href="#">Explore Now</a>
+        </div>
+    </div>
+</article>
+
+    <section class="category">
+    
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="subscription">
+                <h2 class="title subscription__title">
+                    Register now so you don't miss our programs
+                </h2>
+                <form class="subscription__form" action="#">
+                    <label class="sr-only" for="email"></label>
+                    <input class="subscription__field" type="email" name="email" id="email"
+                        placeholder="Enter your Email" required>
+                    <button class="gen-btn subscription__gen-btn">Subcribe Now</button>
+                </form>
+            </div>
+            <div class="footer__inner">
+                <ul class="main-menu">
+                    <li class="main-menu__item main-menu__item--footer">
+                        <a class="link main-menu__link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--footer">
+                        <a class="link main-menu__link" href="#">
+                            Category
+                        </a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--footer">
+                        <a class="link main-menu__link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--footer">
+                        <a class="link main-menu__link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link" style="-webkit-mask-image:url(images/sprite.svg#facebook)"
+                            href="#">
+                            <span class="sr-only">Go in facebook</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" style="-webkit-mask-image:url(images/sprite.svg#twitter)"
+                            href="#">
+                            <span class="sr-only">Go in twitter</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" style="-webkit-mask-image:url(images/sprite.svg#instagram)"
+                            href="#">
+                            <span class="sr-only">Go in instagram</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" style="-webkit-mask-image:url(images/sprite.svg#youtube)"
+                            href="#">
+                            <span class="sr-only">Go in outube</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                &copy; 2022 Monito. All rights reserved.
+            </div>
+            <a class="logo footer__logo" href="#">
+                <img class="logo__img" src="images/logo.svg" alt="Monito logo">
+            </a>
+            <div class="footer__info">
+                <a class="link footer__info-link" href="#">Terms of Service</a>
+                <a class="link footer__info-link" href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
